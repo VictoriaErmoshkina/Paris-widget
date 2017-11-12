@@ -15,6 +15,7 @@ body {
   background-color: #37424f;
   margin: 0;
   font-family: LatoLight;
+
 }
 
 .widget{
@@ -143,11 +144,11 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
-.week ol :first-child{
+.week .first-day{
   padding-left: 0;
 }
 
-.week ol :last-child {
+.week .last-day {
   border-right: 0;
   padding-right: 0;
 }
@@ -155,6 +156,10 @@ body {
 .week ol img {
   display: block;
   margin: 0 auto;
+}
+
+.week .hidden{
+  display: none;
 }
 
 .cloudy {

@@ -1,44 +1,45 @@
 <!doctype html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8">
     <title>Widget Paris</title>
     <link href="style.css" rel="stylesheet">
-  </head>
-  <body>
-    <div class="widget">
-      <div class="today">
+</head>
+<body>
+<div class="widget">
+    <div class="today">
         <div class="date">
-          <div class="day-of-week">Friday</div>
-          <div class="month-day">August, 23rd</div>
+            <div class="day-of-week">Friday</div>
+            <div class="month-day">August, 23rd</div>
         </div>
         <div class="today-info">
-          <div class="degrees">12&deg;</div>
-          <div class="city">Paris, France</div>
-          <div class="wind"><img src="images/Wind.png" alt="wind"><span class="wind-speed-number">14</span> mph</div>
+            <div class="degrees">12&deg;</div>
+            <div class="city">Paris, France</div>
+            <div class="wind"><img src="images/Wind.png" alt="wind"><span class="wind-speed-number">14</span> mph</div>
         </div>
-      </div>
-      <div class="week">
+    </div>
+    <div class="week">
         <button type="button" class="button-back">Back</button>
         <ol>
-          <li>Monday <img src="images/Rainy.png" alt="rainy" class="rainy">10&deg;</li>
-          <li>Tuesday <img src="images/Cloudy.png" alt="cloudy" class="cloudy">15&deg;</li>
-          <li>Wednesday <img src="images/Sunny.png" alt="sunny" class="sunny">23&deg;</li>
-          <li>Thursday <img src="images/Overcast.png" alt="overcast" class="overcast">18&deg;</li>
+            <li class="first-day">Monday <img src="images/Rainy.png" alt="rainy" class="rainy">10&deg;</li>
+            <li>Tuesday <img src="images/Cloudy.png" alt="cloudy" class="cloudy">15&deg;</li>
+            <li>Wednesday <img src="images/Sunny.png" alt="sunny" class="sunny">23&deg;</li>
+            <li class="last-day">Thursday <img src="images/Overcast.png" alt="overcast" class="overcast">18&deg;</li>
         </ol>
         <button type="button" class="button-next">Next</button>
-      </div>
     </div>
-    <form class="params" action="index.html" method="post">
-      <p>Choose a city:<br>
+</div>
+<form class="params" action="index.html" method="post">
+    <p>Choose a city:<br>
         <input type="text" name="city" size="40">
-      </p>
-      <p>Choose a number of days:<br>
+    </p>
+    <p>Choose a number of days:<br>
         <input type="radio" name="number-of-days" value="5">5 days<br>
         <input type="radio" name="number-of-days" value="14" disabled="disabled">14 days<br>
-      </p>
-      <button type="button" class="button-submit">Get forecast</button>
-    </form>
-    <script src="weather.js"></script>
-  </body>
+    </p>
+    <button type="button" class="button-submit">Get forecast</button>
+</form>
+<script src="weather-module.js"></script>
+<script src="main.js"></script>
+</body>
 </html>
